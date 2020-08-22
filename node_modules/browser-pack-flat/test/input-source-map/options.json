@@ -1,0 +1,5 @@
+{
+  "debug": true,
+  "preludePath": "node_modules/browserify/_prelude.js",
+  "transform": "babelify"
+}

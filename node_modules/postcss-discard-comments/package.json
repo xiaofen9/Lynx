@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      "postcss-discard-comments@4.0.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "postcss-discard-comments@4.0.0",
+  "_id": "postcss-discard-comments@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-loSimedrPpMmPvj9KtvxocCP2I0=",
+  "_location": "/postcss-discard-comments",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "postcss-discard-comments@4.0.0",
+    "name": "postcss-discard-comments",
+    "escapedName": "postcss-discard-comments",
+    "rawSpec": "4.0.0",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0"
+  },
+  "_requiredBy": [
+    "/cssnano-preset-default"
+  ],
+  "_resolved": "https://registry.npmjs.org/postcss-discard-comments/-/postcss-discard-comments-4.0.0.tgz",
+  "_spec": "4.0.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Ben Briggs",
+    "email": "beneb.info@gmail.com",
+    "url": "http://beneb.info"
+  },
+  "bugs": {
+    "url": "https://github.com/cssnano/cssnano/issues"
+  },
+  "dependencies": {
+    "postcss": "^6.0.0"
+  },
+  "description": "Discard comments in your CSS files with PostCSS.",
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "cross-env": "^5.0.0",
+    "postcss-scss": "^1.0.0",
+    "postcss-simple-vars": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "files": [
+    "dist",
+    "LICENSE-MIT"
+  ],
+  "homepage": "https://github.com/cssnano/cssnano",
+  "keywords": [
+    "css",
+    "comments",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "postcss-discard-comments",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssnano/cssnano.git"
+  },
+  "scripts": {
+    "prepublish": "cross-env BABEL_ENV=publish babel src --out-dir dist --ignore /__tests__/"
+  },
+  "version": "4.0.0"
+}

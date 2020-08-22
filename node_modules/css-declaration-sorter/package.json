@@ -1,0 +1,79 @@
+{
+  "_args": [
+    [
+      "css-declaration-sorter@3.0.1",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "css-declaration-sorter@3.0.1",
+  "_id": "css-declaration-sorter@3.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-jH4024SHZ3e0M7ann9VxpFpH3moplRXNz9ZBqvFMZqi09Yo5ARbs2wdPH8GqN9iRTlQynrbGbraNbBxBLei85Q==",
+  "_location": "/css-declaration-sorter",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "css-declaration-sorter@3.0.1",
+    "name": "css-declaration-sorter",
+    "escapedName": "css-declaration-sorter",
+    "rawSpec": "3.0.1",
+    "saveSpec": null,
+    "fetchSpec": "3.0.1"
+  },
+  "_requiredBy": [
+    "/cssnano-preset-default"
+  ],
+  "_resolved": "https://registry.npmjs.org/css-declaration-sorter/-/css-declaration-sorter-3.0.1.tgz",
+  "_spec": "3.0.1",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Selwyn",
+    "email": "talk@selwyn.cc",
+    "url": "https://selwyn.cc/"
+  },
+  "bugs": {
+    "url": "https://github.com/Siilwyn/css-declaration-sorter/issues"
+  },
+  "dependencies": {
+    "postcss": "^6.0.0",
+    "timsort": "^0.3.0"
+  },
+  "description": "Sorts CSS declarations fast and automatically in a certain order.",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "eslint": "^4.1.0",
+    "tape": "^4.2.1"
+  },
+  "files": [
+    "src/index.js",
+    "orders"
+  ],
+  "homepage": "https://github.com/Siilwyn/css-declaration-sorter#readme",
+  "keywords": [
+    "postcss",
+    "postcss-plugin",
+    "css",
+    "declaration",
+    "sorter",
+    "property",
+    "order"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "css-declaration-sorter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siilwyn/css-declaration-sorter.git"
+  },
+  "scripts": {
+    "lint": "eslint src/*.js tests/*.js",
+    "postversion": "git push --follow-tags && npm publish",
+    "preversion": "npm test",
+    "scrape": "node src/property-scraper",
+    "test": "node tests/test.js",
+    "test:benchmark": "node tests/benchmark/benchmark.js",
+    "test:ci": "npm test && npm run lint -- --max-warnings 0"
+  },
+  "version": "3.0.1"
+}

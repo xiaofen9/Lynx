@@ -1,0 +1,15 @@
+<index: arrays="option/options" element="contextmenu">
+    <div class="context-menu dropdown {{@class}}{{if open}} open{{/if}}">
+        <ul as="menu" class="dropdown-menu {{@menuClass}}" role="menu" style="position: fixed">
+        {{if @header}}
+          <li class="dropdown-header">{{@header}}</li>
+        {{/}}
+        {{each @options as #option}}
+          <li role="presentation" class="{{#option.class}}">
+            {{if #option.content}}
+              <a on-click="select(#option)" role="menuitem" tabindex="-1">{{#option.content}}</a>
+            {{/}}
+          </li>
+        {{/}}
+    </ul>
+  </div>

@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      "esm@3.0.80",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "esm@3.0.80",
+  "_id": "esm@3.0.80",
+  "_inBundle": false,
+  "_integrity": "sha512-idOyS2LmLFL/A/qYq/IzJLxK4ZEIurSJGMC79t4aDIaNpLY9cNsOsiMBNV5hVOcbrkBAiWTDLKWBqaPieOmYew==",
+  "_location": "/esm",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "esm@3.0.80",
+    "name": "esm",
+    "escapedName": "esm",
+    "rawSpec": "3.0.80",
+    "saveSpec": null,
+    "fetchSpec": "3.0.80"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/esm/-/esm-3.0.80.tgz",
+  "_spec": "3.0.80",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "John-David Dalton",
+    "email": "john.david.dalton@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/standard-things/esm/issues"
+  },
+  "description": "Tomorrow's ECMAScript modules today!",
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "index.js",
+    "esm.js",
+    "esm/loader.js"
+  ],
+  "homepage": "https://github.com/standard-things/esm#readme",
+  "keywords": [
+    "commonjs",
+    "ecmascript",
+    "export",
+    "import",
+    "modules",
+    "node",
+    "require"
+  ],
+  "license": "MIT",
+  "main": "esm.js",
+  "name": "esm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/standard-things/esm.git"
+  },
+  "runkitExample": "require = require(\"esm\")(module)\nrequire(\"lodash-es\")",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.0.80"
+}

@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      "postcss-normalize-charset@4.0.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "postcss-normalize-charset@4.0.0",
+  "_id": "postcss-normalize-charset@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-JFJyknAtXoEp6vo9HeSe1RpqtzA=",
+  "_location": "/postcss-normalize-charset",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "postcss-normalize-charset@4.0.0",
+    "name": "postcss-normalize-charset",
+    "escapedName": "postcss-normalize-charset",
+    "rawSpec": "4.0.0",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0"
+  },
+  "_requiredBy": [
+    "/cssnano-preset-default"
+  ],
+  "_resolved": "https://registry.npmjs.org/postcss-normalize-charset/-/postcss-normalize-charset-4.0.0.tgz",
+  "_spec": "4.0.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Bogdan Chadkin",
+    "email": "trysound@yandex.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/cssnano/cssnano/issues"
+  },
+  "dependencies": {
+    "postcss": "^6.0.0"
+  },
+  "description": "Add necessary or remove extra charset with PostCSS",
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "cross-env": "^5.0.0",
+    "postcss-devtools": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/cssnano/cssnano",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "charset"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "postcss-normalize-charset",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssnano/cssnano.git"
+  },
+  "scripts": {
+    "prepublish": "cross-env BABEL_ENV=publish babel src --out-dir dist --ignore /__tests__/"
+  },
+  "version": "4.0.0"
+}

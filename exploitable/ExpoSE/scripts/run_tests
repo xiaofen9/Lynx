@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+unset RECOMPILE
+EXPOSE_LOG_LEVEL=0
+
+. ./scripts/build/build_all
+. ./scripts/build/build_tester
+
+node --version
+node ./Tester/bin/TestRunner.js ./tests/ test_list
+
+exit $?

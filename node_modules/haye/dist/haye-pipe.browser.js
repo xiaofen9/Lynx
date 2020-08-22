@@ -1,0 +1,1 @@
+var hayePipe=function(){"use strict";return function(a,e){e.add();for(var r=a.length,n=0,t="name";n<r;){var d=a[n++],u=d.charCodeAt(0);58===u||44===u?(t="arg",e.shiftValue()):124===u?(t="name",e.add()):"arg"===t?e.appendValue(d):e.appendKey(d,u)}return e.toJSON()}}();

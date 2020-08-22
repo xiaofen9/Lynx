@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      "rc-tooltip@3.7.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "rc-tooltip@3.7.0",
+  "_id": "rc-tooltip@3.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-xEoUMatXp8OEL61UFH0+NrC39nkKzpOBhLrJCnnRpDRduU8L3DOhF6CNlIMkvg68hxlGGdquFtFw2t+1xNLX5A==",
+  "_location": "/rc-tooltip",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "rc-tooltip@3.7.0",
+    "name": "rc-tooltip",
+    "escapedName": "rc-tooltip",
+    "rawSpec": "3.7.0",
+    "saveSpec": null,
+    "fetchSpec": "3.7.0"
+  },
+  "_requiredBy": [
+    "/rc-slider"
+  ],
+  "_resolved": "https://registry.npmjs.org/rc-tooltip/-/rc-tooltip-3.7.0.tgz",
+  "_spec": "3.7.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "bugs": {
+    "url": "http://github.com/react-component/tooltip/issues"
+  },
+  "config": {
+    "port": 8007,
+    "entry": {
+      "rc-tooltip": [
+        "./src/index.js"
+      ]
+    }
+  },
+  "dependencies": {
+    "babel-runtime": "6.x",
+    "prop-types": "^15.5.8",
+    "rc-trigger": "^2.2.2"
+  },
+  "description": "React Tooltip",
+  "devDependencies": {
+    "bootstrap": "~3.3.2",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "enzyme-to-json": "^3.2.1",
+    "jest": "^21.2.1",
+    "object-assign": "~4.0.1",
+    "pre-commit": "1.x",
+    "rc-tools": "^7.0.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "assets/*.css"
+  ],
+  "homepage": "http://github.com/react-component/tooltip",
+  "jest": {
+    "setupFiles": [
+      "./tests/setup.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "\\.jsx?$": "./node_modules/rc-tools/scripts/jestPreprocessor.js"
+    }
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-tooltip",
+    "tooltip"
+  ],
+  "license": "MIT",
+  "main": "lib/index",
+  "maintainers": [
+    {
+      "name": "yiminghe@gmail.com"
+    }
+  ],
+  "module": "es/index",
+  "name": "rc-tooltip",
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/react-component/tooltip.git"
+  },
+  "scripts": {
+    "build": "rc-tools run build",
+    "compile": "rc-tools run compile --babel-runtime",
+    "coverage": "jest --coverage",
+    "dist": "rc-tools run dist",
+    "gh-pages": "rc-tools run gh-pages",
+    "lint": "rc-tools run lint",
+    "pub": "rc-tools run pub --babel-runtime",
+    "start": "rc-tools run server",
+    "test": "jest"
+  },
+  "version": "3.7.0"
+}

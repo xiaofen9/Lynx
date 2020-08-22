@@ -1,0 +1,113 @@
+{
+  "_args": [
+    [
+      "react-scroll@1.7.10",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "react-scroll@1.7.10",
+  "_id": "react-scroll@1.7.10",
+  "_inBundle": false,
+  "_integrity": "sha512-7K1caXF19PQ/jck+QRCdRMytqWei1ktv7jtcsgMap2s55pGOUc/a5phr4loajZRFRx3qKj9Tz12KDtELp91xMg==",
+  "_location": "/react-scroll",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-scroll@1.7.10",
+    "name": "react-scroll",
+    "escapedName": "react-scroll",
+    "rawSpec": "1.7.10",
+    "saveSpec": null,
+    "fetchSpec": "1.7.10"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-scroll/-/react-scroll-1.7.10.tgz",
+  "_spec": "1.7.10",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": "",
+  "authors": [
+    "Joachim Karlsson"
+  ],
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-assign"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/fisshy/react-scroll/issues"
+  },
+  "dependencies": {
+    "lodash.throttle": "^4.1.1",
+    "prop-types": "^15.5.8"
+  },
+  "description": "A scroll component for React.js",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "expect": "^1.20.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "karma": "^1.6.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-edge-launcher": "^0.4.2",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.3",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.3",
+    "mocha": "^3.2.0",
+    "react": "^16.0.0",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^16.0.0",
+    "sinon": "^4.1.2",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "homepage": "https://github.com/fisshy/react-scroll",
+  "keywords": [
+    "react",
+    "react-component",
+    "scroll",
+    "scroller",
+    "scrolls"
+  ],
+  "license": "MIT",
+  "main": "modules",
+  "name": "react-scroll",
+  "peerDependencies": {
+    "react": "^15.5.4 || ^16.0.0",
+    "react-dom": "^15.5.4 || ^16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fisshy/react-scroll.git"
+  },
+  "scripts": {
+    "build": "babel modules -d build/npm/modules --ignore '**/__tests__/**' --plugins transform-class-properties && gulp",
+    "clean": "rm -rf build/npm/modules",
+    "examples": "webpack-dev-server --config examples/webpack.config.js --no-info --content-base examples",
+    "start": "npm run examples",
+    "test": "karma start"
+  },
+  "tags": [
+    "react",
+    "scroll"
+  ],
+  "version": "1.7.10"
+}

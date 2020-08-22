@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "clone-properties-to.js",
+  "sourceRoot": "../src/",
+  "sources": [
+    "clone-properties-to.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,MAAA;;EAAA,cAAA,GAAkB,OAAA,CAAQ,kBAAR;;EAElB,aAAA,GAAkB,MAAM,CAAC;;EACzB,aAAA,GAAkB,MAAM,CAAC;;EAEzB,MAAM,CAAC,OAAP,GAAkB,iBAAA,GAAoB,SAAC,IAAD,EAAO,GAAP;AACpC,QAAA;AAAA;AAAA,SAAA,qCAAA;;MACE,IAAA,GAAO,aAAA,CAAc,GAAd,EAAmB,CAAnB;MACP,cAAA,CAAe,IAAf,EAAqB,CAArB,EAAwB,MAAxB,EAAmC,IAAnC;AAFF;WAGA;EAJoC;AALtC"
+}

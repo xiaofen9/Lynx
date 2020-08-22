@@ -1,0 +1,1 @@
+function Pipe(a,e){e.add();for(var r=a.length,d=0,n="name";d<r;){var t=a[d++],p=t.charCodeAt(0);58===p||44===p?(n="arg",e.shiftValue()):124===p?(n="name",e.add()):"arg"===n?e.appendValue(t):e.appendKey(t,p)}return e.toJSON()}export default Pipe;

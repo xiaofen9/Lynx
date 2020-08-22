@@ -1,0 +1,13 @@
+{
+  "name": "Profiler",
+  "version": "1.0",
+  "description": "Profiler of web requests",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+  "browser_action":{
+    "default_title": "Profiler"
+  },
+  "permissions": [ "webRequest", "webRequestBlocking", "webNavigation", "tabs", "http://*/*", "https://*/*", "debugger"]
+}

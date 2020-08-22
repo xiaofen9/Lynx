@@ -1,0 +1,71 @@
+{
+  "_args": [
+    [
+      "workbox-google-analytics@3.4.1",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "workbox-google-analytics@3.4.1",
+  "_id": "workbox-google-analytics@3.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-w6Osz2Rr1/4+W0gram6Yzg6NNWLvHP51RwFCNAZSpEnipr0qSEtD+yvwrdaHfiJHWhcK2yH/V6E1MV8Hrczmvw==",
+  "_location": "/workbox-google-analytics",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "workbox-google-analytics@3.4.1",
+    "name": "workbox-google-analytics",
+    "escapedName": "workbox-google-analytics",
+    "rawSpec": "3.4.1",
+    "saveSpec": null,
+    "fetchSpec": "3.4.1"
+  },
+  "_requiredBy": [
+    "/workbox-build"
+  ],
+  "_resolved": "https://registry.npmjs.org/workbox-google-analytics/-/workbox-google-analytics-3.4.1.tgz",
+  "_spec": "3.4.1",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Google's Web DevRel Team"
+  },
+  "bugs": {
+    "url": "https://github.com/googlechrome/workbox/issues"
+  },
+  "dependencies": {
+    "workbox-background-sync": "^3.4.1",
+    "workbox-core": "^3.4.1",
+    "workbox-routing": "^3.4.1",
+    "workbox-strategies": "^3.4.1"
+  },
+  "description": "Queues failed requests and uses the Background Sync API to replay them when the network is available",
+  "homepage": "https://github.com/GoogleChrome/workbox",
+  "keywords": [
+    "workbox",
+    "workboxjs",
+    "service worker",
+    "sw",
+    "offline",
+    "google",
+    "analytics"
+  ],
+  "license": "Apache-2.0",
+  "main": "build/workbox-google-analytics.prod.js",
+  "module": "index.mjs",
+  "name": "workbox-google-analytics",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/googlechrome/workbox.git"
+  },
+  "scripts": {
+    "build": "gulp build-packages --package workbox-google-analytics",
+    "prepare": "npm run build",
+    "version": "npm run build"
+  },
+  "version": "3.4.1",
+  "workbox": {
+    "browserNamespace": "workbox.googleAnalytics",
+    "packageType": "browser"
+  }
+}

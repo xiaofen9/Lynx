@@ -1,0 +1,15 @@
+<index: arrays="pane/panes" element="tabs">
+  <ul class="nav nav-tabs">
+    {{each @panes as #pane, #i}}
+      <li class="{{if selectedIndex === #i}}active{{/if}}">
+        <a on-click="select(#i)">{{#pane.title}}</a>
+      </li>
+    {{/each}}
+  </ul>
+  <div class="tab-content">
+    {{each @panes as #pane, #i}}
+      <div class="tab-pane{{if selectedIndex === #i}} active{{/if}}">
+        {{#pane.content}}
+      </div>
+    {{/each}}
+  </div>

@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      "workbox-navigation-preload@3.4.1",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "workbox-navigation-preload@3.4.1",
+  "_id": "workbox-navigation-preload@3.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-P3FHAcyZ8db2QiW/BpMkuosC1OkRsEoUaT7U3QOgg7JSjjsJoEbF7G5olNe+P+PQYdVhJA7TCuptI6dy2gLS/g==",
+  "_location": "/workbox-navigation-preload",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "workbox-navigation-preload@3.4.1",
+    "name": "workbox-navigation-preload",
+    "escapedName": "workbox-navigation-preload",
+    "rawSpec": "3.4.1",
+    "saveSpec": null,
+    "fetchSpec": "3.4.1"
+  },
+  "_requiredBy": [
+    "/workbox-build"
+  ],
+  "_resolved": "https://registry.npmjs.org/workbox-navigation-preload/-/workbox-navigation-preload-3.4.1.tgz",
+  "_spec": "3.4.1",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Google's Web DevRel Team"
+  },
+  "bugs": {
+    "url": "https://github.com/googlechrome/workbox/issues"
+  },
+  "dependencies": {
+    "workbox-core": "^3.4.1"
+  },
+  "description": "This library allows developers to opt-in to using Navigation Preload in their service worker.",
+  "homepage": "https://github.com/GoogleChrome/workbox",
+  "keywords": [
+    "workbox",
+    "workboxjs",
+    "service worker",
+    "sw",
+    "navigation"
+  ],
+  "license": "Apache-2.0",
+  "main": "build/workbox-navigation-preload.prod.js",
+  "module": "index.mjs",
+  "name": "workbox-navigation-preload",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/googlechrome/workbox.git"
+  },
+  "scripts": {
+    "build": "gulp build-packages --package workbox-navigation-preload",
+    "prepare": "npm run build",
+    "version": "npm run build"
+  },
+  "version": "3.4.1",
+  "workbox": {
+    "browserNamespace": "workbox.navigationPreload",
+    "packageType": "browser"
+  }
+}

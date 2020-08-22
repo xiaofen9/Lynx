@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "int.js",
+  "sourceRoot": "../../../src/is/string/",
+  "sources": [
+    "int.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,MAAA;;EAAA,GAAA,GAAM;;EAEN,MAAM,CAAC,OAAP,GAAiB,SAAC,GAAD;WAAO,GAAA,KAAS,EAAT,IAAgB,GAAG,CAAC,IAAJ,CAAS,GAAT;EAAvB;AAFjB"
+}

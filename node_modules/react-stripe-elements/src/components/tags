@@ -1,0 +1,42 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+class.Component.id	/Users/jez/stripe/react-stripe-elements/src/components/PaymentRequestButtonElement.js	/^    id: PropTypes.string,$/;"	p	language:JavaScript
+export.addElementsLoadListener	/Users/jez/stripe/react-stripe-elements/src/components/Elements.js	/^  addElementsLoadListener: ElementsLoadListener => void,$/;"	p	language:JavaScript
+export.addElementsLoadListener	/Users/jez/stripe/react-stripe-elements/src/components/Elements.js	/^  addElementsLoadListener: PropTypes.func.isRequired,$/;"	p	language:JavaScript
+export.addStripeLoadListener	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^  addStripeLoadListener: StripeLoadListener => void,$/;"	p	language:JavaScript
+export.Component.apiKey	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^    apiKey: PropTypes.string,$/;"	p	language:JavaScript
+export.getRegisteredElements	/Users/jez/stripe/react-stripe-elements/src/components/Elements.js	/^  getRegisteredElements: () => ElementsList,$/;"	p	language:JavaScript
+export.getRegisteredElements	/Users/jez/stripe/react-stripe-elements/src/components/Elements.js	/^  getRegisteredElements: PropTypes.func.isRequired,$/;"	p	language:JavaScript
+export.stripe	/Users/jez/stripe/react-stripe-elements/src/components/inject.js	/^export type InjectedProps = {stripe: WrappedStripeShape | null};$/;"	p	language:JavaScript
+export.stripe	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^  stripe: StripeShape,$/;"	p	language:JavaScript
+export.tag	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^  tag: 'async',$/;"	p	language:JavaScript
+export.tag	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^  tag: 'sync',$/;"	p	language:JavaScript
+export.tag	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^  tag: PropTypes.string.isRequired,$/;"	p	language:JavaScript
+state.registeredElements	/Users/jez/stripe/react-stripe-elements/src/components/Elements.js	/^      registeredElements: [],$/;"	p	language:JavaScript
+static.apiKey	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^    apiKey: undefined,$/;"	p	language:JavaScript
+static.children	/Users/jez/stripe/react-stripe-elements/src/components/Elements.js	/^    children: null,$/;"	p	language:JavaScript
+static.children	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^    children: null,$/;"	p	language:JavaScript
+static.className	/Users/jez/stripe/react-stripe-elements/src/components/Element.js	/^      className: undefined,$/;"	p	language:JavaScript
+static.className	/Users/jez/stripe/react-stripe-elements/src/components/PaymentRequestButtonElement.js	/^    className: undefined,$/;"	p	language:JavaScript
+static.elementRef	/Users/jez/stripe/react-stripe-elements/src/components/PaymentRequestButtonElement.js	/^    elementRef: undefined,$/;"	p	language:JavaScript
+static.id	/Users/jez/stripe/react-stripe-elements/src/components/Element.js	/^      id: PropTypes.string,$/;"	p	language:JavaScript
+static.id	/Users/jez/stripe/react-stripe-elements/src/components/Element.js	/^      id: undefined,$/;"	p	language:JavaScript
+static.id	/Users/jez/stripe/react-stripe-elements/src/components/PaymentRequestButtonElement.js	/^    id: undefined,$/;"	p	language:JavaScript
+static.onBlur	/Users/jez/stripe/react-stripe-elements/src/components/Element.js	/^      onBlur: noop,$/;"	p	language:JavaScript
+static.onBlur	/Users/jez/stripe/react-stripe-elements/src/components/PaymentRequestButtonElement.js	/^    onBlur: noop,$/;"	p	language:JavaScript
+static.onChange	/Users/jez/stripe/react-stripe-elements/src/components/Element.js	/^      onChange: noop,$/;"	p	language:JavaScript
+static.onClick	/Users/jez/stripe/react-stripe-elements/src/components/PaymentRequestButtonElement.js	/^    onClick: noop,$/;"	p	language:JavaScript
+static.onFocus	/Users/jez/stripe/react-stripe-elements/src/components/Element.js	/^      onFocus: noop,$/;"	p	language:JavaScript
+static.onFocus	/Users/jez/stripe/react-stripe-elements/src/components/PaymentRequestButtonElement.js	/^    onFocus: noop,$/;"	p	language:JavaScript
+static.onReady	/Users/jez/stripe/react-stripe-elements/src/components/Element.js	/^      onReady: noop,$/;"	p	language:JavaScript
+static.onReady	/Users/jez/stripe/react-stripe-elements/src/components/PaymentRequestButtonElement.js	/^    onReady: noop,$/;"	p	language:JavaScript
+static.stripe	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^    stripe: undefined,$/;"	p	language:JavaScript
+this.state.stripe	/Users/jez/stripe/react-stripe-elements/src/components/inject.js	/^          stripe: null,$/;"	p	language:JavaScript
+this.state.stripe	/Users/jez/stripe/react-stripe-elements/src/components/inject.js	/^          stripe: this.stripeProps(this.context.stripe),$/;"	p	language:JavaScript
+this._meta.stripe	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^          stripe: getOrCreateStripe(apiKey, options),$/;"	p	language:JavaScript
+this._meta.stripe	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^        stripe: ensureStripeShape(this.props.stripe),$/;"	p	language:JavaScript
+this._meta.stripe	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^        stripe: null,$/;"	p	language:JavaScript
+this._meta.tag	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^          tag: 'sync',$/;"	p	language:JavaScript
+this._meta.tag	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^        tag: 'async',$/;"	p	language:JavaScript
+this._meta.tag	/Users/jez/stripe/react-stripe-elements/src/components/Provider.js	/^        tag: 'sync',$/;"	p	language:JavaScript
+type.registeredElements	/Users/jez/stripe/react-stripe-elements/src/components/Elements.js	/^  registeredElements: ElementsList,$/;"	p	language:JavaScript
+type.stripe	/Users/jez/stripe/react-stripe-elements/src/components/inject.js	/^type State = {stripe: WrappedStripeShape | null};$/;"	p	language:JavaScript

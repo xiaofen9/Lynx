@@ -1,0 +1,17 @@
+<index:>
+  <div class="d-barchart-vanilla">
+    <svg width={{width}} height={{height}}>
+      <g class="bars">
+        {{each layout as #d, #i}}
+        <rect class=bar
+          x={{#d.x}}
+          y={{#d.y}}
+          width={{#d.width}}
+          height={{#d.height}}
+          on-click=clicker(#d,#i,$event,$element)
+        >
+        </rect>
+        {{/each}}
+      </g>
+    </svg>
+  </div>

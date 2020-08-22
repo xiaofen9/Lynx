@@ -1,0 +1,17 @@
+{
+	"development": {
+	  "host" : "192.168.236.146",
+		"port" : "3306",
+		"database" : "Pomelo",
+		"user" : "root",
+		"password" : "root"
+	},
+
+	"production": {
+	  "host" : "192.168.236.146",
+		"port" : "3306",
+		"database" : "Pomelo",
+		"user" : "root",
+		"password" : "root"
+	}
+}

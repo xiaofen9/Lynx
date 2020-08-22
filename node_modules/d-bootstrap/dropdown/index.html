@@ -1,0 +1,18 @@
+<index: arrays="option/options" element="dropdown">
+  <div class="dropdown {{@class}}{{if open}} open{{/if}}">
+    <button
+      as="toggleButton"
+      on-click="toggle()"
+      id="dropdown-toggle{{id}}"
+      class="btn {{@buttonClass || 'btn-default'}} dropdown-toggle"
+      type="button">
+      {{label(value)}} <span class="caret"></span>
+    </button>
+    <ul as="menu" class="dropdown-menu {{@menuClass}}" role="menu" aria-labelledby="dropdown-toggle{{id}}">
+      {{each @options}}
+        <li role="presentation" class="{{this.class}}">
+          <a on-click="select(this)" role="menuitem" tabindex="-1">{{this.content}}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>

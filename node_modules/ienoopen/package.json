@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      "ienoopen@1.0.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "ienoopen@1.0.0",
+  "_id": "ienoopen@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-NGpCj0dKrI9QzzeE6i0PFvYr2ms=",
+  "_location": "/ienoopen",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ienoopen@1.0.0",
+    "name": "ienoopen",
+    "escapedName": "ienoopen",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/helmet"
+  ],
+  "_resolved": "https://registry.npmjs.org/ienoopen/-/ienoopen-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Adam Baldwin",
+    "email": "baldwin@andyet.net",
+    "url": "http://andyet.net/team/baldwin"
+  },
+  "bugs": {
+    "url": "https://github.com/helmetjs/ienoopen/issues"
+  },
+  "contributors": [
+    {
+      "name": "Evan Hahn",
+      "email": "me@evanhahn.com",
+      "url": "http://evanhahn.com"
+    }
+  ],
+  "description": "Middleware for IE security. Set X-Download-Options to noopen.",
+  "devDependencies": {
+    "connect": "^3.4.0",
+    "mocha": "^2.3.4",
+    "standard": "^5.4.1",
+    "supertest": "^1.1.0"
+  },
+  "homepage": "https://github.com/helmetjs/ienoopen#readme",
+  "keywords": [
+    "helmet",
+    "security",
+    "express",
+    "connect",
+    "noopen",
+    "x-download-options"
+  ],
+  "license": "MIT",
+  "name": "ienoopen",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/helmetjs/ienoopen.git"
+  },
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "standard": {
+    "global": [
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  },
+  "version": "1.0.0"
+}

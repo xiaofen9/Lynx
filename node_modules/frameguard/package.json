@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      "frameguard@3.0.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "frameguard@3.0.0",
+  "_id": "frameguard@3.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-e8rUae57lukdEs6zlZx4I1qScuk=",
+  "_location": "/frameguard",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "frameguard@3.0.0",
+    "name": "frameguard",
+    "escapedName": "frameguard",
+    "rawSpec": "3.0.0",
+    "saveSpec": null,
+    "fetchSpec": "3.0.0"
+  },
+  "_requiredBy": [
+    "/helmet"
+  ],
+  "_resolved": "https://registry.npmjs.org/frameguard/-/frameguard-3.0.0.tgz",
+  "_spec": "3.0.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Adam Baldwin",
+    "email": "baldwin@andyet.net",
+    "url": "http://andyet.net/team/baldwin"
+  },
+  "bugs": {
+    "url": "https://github.com/helmetjs/frameguard/issues"
+  },
+  "contributors": [
+    {
+      "name": "Evan Hahn",
+      "email": "me@evanhahn.com",
+      "url": "http://evanhahn.com"
+    }
+  ],
+  "description": "Middleware to set X-Frame-Options headers",
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "mocha": "^2.4.5",
+    "standard": "^6.0.7",
+    "supertest": "^1.2.0"
+  },
+  "homepage": "https://github.com/helmetjs/frameguard#readme",
+  "keywords": [
+    "helmet",
+    "security",
+    "express",
+    "connect",
+    "x-frame-options",
+    "clickjack",
+    "frame"
+  ],
+  "license": "MIT",
+  "name": "frameguard",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/helmetjs/frameguard.git"
+  },
+  "scripts": {
+    "pretest": "standard",
+    "test": "mocha"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "beforeEach",
+      "it"
+    ]
+  },
+  "version": "3.0.0"
+}

@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<h1>Formy McFormForm</h1>
+
+This page is called formy mcformform. It has <b>Tex</b> and stuff on it. Will that break ExpoSE? probably.
+
+<script>
+
+const config = { attributes: true, childList: true, subtree: true };
+const callback = function(mutationsList, observer) {
+//    console.log(JSON.stringify(arguments));
+    for(let mutation of mutationsList) {
+        if (mutation.type == 'childList') {
+            console.log('A child node has been added or removed.');
+//            mutationsList.forEach(mutation => console.log(mutation));
+        }
+        else if (mutation.type == 'attributes') {
+            console.log('The ' + mutation.attributeName + ' attribute was modified.');
+        }
+    }
+};
+
+let observer = new MutationObserver(callback);
+observer.observe(document, config);
+
+const pageStyle = document.createElement('link');
+
+if (/Apple/.test(document.cookie) || /iPhone/.test(document.cookie)) {
+    pageStyle.href = "/iPhone.css" + navigator.userAgent;
+} else {
+    pageStyle.href = "/Unknown.css" + location.origin;
+}
+
+pageStyle.rel = "stylesheet";
+pageStyle.type = "text/css";
+
+document.head.appendChild(pageStyle);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "_args": [
+    [
+      "postcss-normalize-whitespace@4.0.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "postcss-normalize-whitespace@4.0.0",
+  "_id": "postcss-normalize-whitespace@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-HafnaxCuY8EYJ/oE/Du0oe/pnMA=",
+  "_location": "/postcss-normalize-whitespace",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "postcss-normalize-whitespace@4.0.0",
+    "name": "postcss-normalize-whitespace",
+    "escapedName": "postcss-normalize-whitespace",
+    "rawSpec": "4.0.0",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0"
+  },
+  "_requiredBy": [
+    "/cssnano-preset-default"
+  ],
+  "_resolved": "https://registry.npmjs.org/postcss-normalize-whitespace/-/postcss-normalize-whitespace-4.0.0.tgz",
+  "_spec": "4.0.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Ben Briggs",
+    "email": "beneb.info@gmail.com",
+    "url": "http://beneb.info"
+  },
+  "bugs": {
+    "url": "https://github.com/cssnano/cssnano/issues"
+  },
+  "dependencies": {
+    "postcss": "^6.0.0",
+    "postcss-value-parser": "^3.0.0"
+  },
+  "description": "Trim whitespace inside and around CSS rules & declarations.",
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "cross-env": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "files": [
+    "dist",
+    "LICENSE-MIT"
+  ],
+  "homepage": "https://github.com/cssnano/cssnano",
+  "keywords": [
+    "css",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "postcss-normalize-whitespace",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssnano/cssnano.git"
+  },
+  "scripts": {
+    "prepublish": "cross-env BABEL_ENV=publish babel src --out-dir dist --ignore /__tests__/"
+  },
+  "version": "4.0.0"
+}

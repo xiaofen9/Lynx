@@ -1,0 +1,138 @@
+{
+  "_args": [
+    [
+      "react-image-lightbox@4.6.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "react-image-lightbox@4.6.0",
+  "_id": "react-image-lightbox@4.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-77nhT4D90z1lK8ztR40EiiXp0H/Py7dIccNT993Nq1HT168WXKqVSCmjB6IEA1uxjpkseal/tptTU7eVWoFH1A==",
+  "_location": "/react-image-lightbox",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-image-lightbox@4.6.0",
+    "name": "react-image-lightbox",
+    "escapedName": "react-image-lightbox",
+    "rawSpec": "4.6.0",
+    "saveSpec": null,
+    "fetchSpec": "4.6.0"
+  },
+  "_requiredBy": [
+    "/theme"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-image-lightbox/-/react-image-lightbox-4.6.0.tgz",
+  "_spec": "4.6.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "authors": [
+    "Chris Fritz"
+  ],
+  "bugs": {
+    "url": "https://github.com/fritz-c/react-image-lightbox/issues"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8",
+    "react-modal": "^3.1.10"
+  },
+  "description": "A lightbox component for React.js",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-exponentiation-operator": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "coveralls": "^3.0.0",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.8",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.0",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "file-loader": "^1.1.6",
+    "gh-pages": "^1.1.0",
+    "html-webpack-plugin": "^2.22.0",
+    "identity-obj-proxy": "^3.0.0",
+    "isomorphic-style-loader": "^4.0.0",
+    "jest": "^22.0.6",
+    "jest-enzyme": "^4.0.2",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.10",
+    "prettier": "^1.10.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^3.1.3",
+    "rimraf": "^2.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.10.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://fritz-c.github.io/react-image-lightbox",
+  "jest": {
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+    "setupFiles": [
+      "./test-config/shim.js",
+      "./test-config/test-setup.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss|less)$": "identity-obj-proxy"
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "image",
+    "lightbox"
+  ],
+  "license": "MIT",
+  "main": "dist/main.js",
+  "name": "react-image-lightbox",
+  "peerDependencies": {
+    "react": "^15.5.0 || ^16.0.0",
+    "react-dom": "^15.5.0 || ^16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fritz-c/react-image-lightbox.git"
+  },
+  "scripts": {
+    "build": "npm run clean && cross-env NODE_ENV=production TARGET=umd webpack --bail",
+    "build:demo": "npm run clean:demo && cross-env NODE_ENV=production TARGET=demo webpack --bail",
+    "clean": "rimraf dist",
+    "clean:demo": "rimraf build",
+    "deploy": "npm run build:demo && gh-pages -d build",
+    "lint": "eslint \"{src,examples}/**/*.{js,jsx}\"",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"{src,examples}/**/*.{js,jsx,css,scss}\"",
+    "start": "cross-env NODE_ENV=development TARGET=development webpack-dev-server --inline --hot",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "version": "4.6.0"
+}

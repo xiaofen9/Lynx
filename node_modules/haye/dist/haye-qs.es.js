@@ -1,0 +1,1 @@
+function Qs(a,e){e.add();for(var r=a.length,d=0,n="name",t=!1;d<r;){var o=a[d++],p=o.charCodeAt(0);91===p?t=!0:93===p?t=!1:61===p||44===p&&t?(n="arg",e.shiftValue()):44===p?(n="name",e.add()):"arg"===n?e.appendValue(o):e.appendKey(o,p)}return e.toJSON()}export default Qs;

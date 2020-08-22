@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      "unicode@10.0.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "unicode@10.0.0",
+  "_id": "unicode@10.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-5dUcHbk7bHGguHngsMSvfm/faI4=",
+  "_location": "/unicode",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "unicode@10.0.0",
+    "name": "unicode",
+    "escapedName": "unicode",
+    "rawSpec": "10.0.0",
+    "saveSpec": null,
+    "fetchSpec": "10.0.0"
+  },
+  "_requiredBy": [
+    "/slug"
+  ],
+  "_resolved": "https://registry.npmjs.org/unicode/-/unicode-10.0.0.tgz",
+  "_spec": "10.0.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "dodo",
+    "url": "https://github.com/dodo"
+  },
+  "bugs": {
+    "url": "https://github.com/eversport/node-unicodetable/issues"
+  },
+  "contributors": [
+    {
+      "name": "Mathias Bynens",
+      "email": "mathias@qiwi.be",
+      "url": "http://mathiasbynens.be/"
+    },
+    {
+      "name": "Thomas Danecker",
+      "email": "thomas.danecker@eversports.com"
+    }
+  ],
+  "description": "unicode lookup table",
+  "devDependencies": {
+    "bufferstream": ">= 0.6.2",
+    "np": "2.13.1"
+  },
+  "engines": {
+    "node": ">= 0.8.x"
+  },
+  "homepage": "http://github.com/eversport/node-unicodetable",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/dodo/node-unicodetable/raw/master/LICENSE"
+    }
+  ],
+  "name": "unicode",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eversport/node-unicodetable.git"
+  },
+  "scripts": {
+    "download": "curl \"https://unicode.org/Public/10.0.0/ucd/UnicodeData.txt\" > UnicodeData.txt",
+    "generate": "node generate.js",
+    "np": "np",
+    "test": "node test.js"
+  },
+  "version": "10.0.0"
+}

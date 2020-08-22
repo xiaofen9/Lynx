@@ -1,0 +1,17 @@
+<index:>
+  <div class="d-d3-barchart">
+    <svg as="chart" width={{width}} height={{height}}>
+      <g class="bars">
+      {{unbound}}
+        {{each data as #d, #i}}
+        <rect class=bar
+          x={{x(#d,#i)}}
+          y={{y(#d,#i)}}
+          width={{width(#d,#i)}}
+          height={{height(#d,#i)}}>
+        </rect>
+        {{/each}}
+      {{/unbound}}
+      </g>
+    </svg>
+  </div>

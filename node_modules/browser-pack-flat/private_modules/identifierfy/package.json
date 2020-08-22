@@ -1,0 +1,75 @@
+{
+  "_from": "identifierfy@latest",
+  "_id": "identifierfy@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Gx1CmO0DbL5aECe3kclZNNDsGPIRo9NThTSTAeS3U8Pn58OsadGpU6ByxFriVHT8HQtGO9WErxZOfrXcx3yHOw==",
+  "_location": "/identifierfy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "identifierfy@latest",
+    "name": "identifierfy",
+    "escapedName": "identifierfy",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/identifierfy/-/identifierfy-2.0.0.tgz",
+  "_shasum": "82922a33791e28b4e4d119dd1bc4a20c9a69c9c0",
+  "_spec": "identifierfy@latest",
+  "_where": "/home/goto-bus-stop/Code/goto-bus-stop/browser-pack-flat",
+  "author": {
+    "name": "Mark Wubben",
+    "url": "https://novemberborn.net/"
+  },
+  "bugs": {
+    "url": "https://github.com/novemberborn/identifierfy/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "esutils": "^2.0.2"
+  },
+  "deprecated": false,
+  "description": "Rewrites an identifier string so its valid according to ES2015",
+  "devDependencies": {
+    "@novemberborn/as-i-preach": "^11.0.0",
+    "ava": "^1.0.0-beta.8",
+    "nyc": "^13.0.1"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/novemberborn/identifierfy#readme",
+  "keywords": [
+    "es6",
+    "es2015",
+    "identifier"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "identifierfy",
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novemberborn/identifierfy.git"
+  },
+  "scripts": {
+    "lint": "as-i-preach",
+    "test": "as-i-preach && nyc ava"
+  },
+  "version": "2.0.0"
+}

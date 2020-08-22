@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "Cleaning $1"
+cd $1
+rm -rf node_modules

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+./scripts/setup/cleanup $1
+
+echo "Setting up $1"
+
+cd $1
+echo "Pulling Dependencies"
+npm install

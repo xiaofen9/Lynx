@@ -1,0 +1,7 @@
+<index: element="alert" attributes="dismiss">
+  <div class="alert alert-{{@type}} {{if @dismiss}}alert-dismissable{{/}} {{if faded}}fade{{/}}" style="{{if hidden}}display: none{{/}}">
+    {{if @dismiss}}
+      <button on-click="hide()" type="button" class="close" aria-hidden="true">{{@dismiss}}</button>
+    {{/}}
+    {{@content}}
+  </div>

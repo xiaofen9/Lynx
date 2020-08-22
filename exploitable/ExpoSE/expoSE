@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+
+function abs_target {
+    if [[ ${1} =~ ^https?://.+ ]]; then
+        echo $1
+    else
+        #Generate the absolute path of test script
+        cd "$2"
+        cd "$(dirname "$1")"
+        echo "$(printf "%s/%s\n" "$(pwd)" "$(basename "$1")")" 
+    fi
+}
+
+#Store the current working directory to return after calculating abspath
+ORIGIN_PATH="$(pwd)"
+
+#cd to ExpoSE directory
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
+if [[ ${EXPOSE_LOG_LEVEL} && ${EXPOSE_LOG_LEVEL-x} ]]; then
+	RECOMPILE="1"
+fi
+
+#If the RECOMPILE flag is set then call the recompile script
+if [[ ${RECOMPILE} && ${RECOMPILE-x} ]]; then
+
+	./scripts/build/build_all
+
+	if [ $? -ne 0 ]; then
+		exit 1
+	fi
+
+fi
+
+if [ "$1" == "ui" ]; then #Launch the user interface
+
+    export PATH=$PATH:$(pwd)
+    (cd Dashboard && npm start);
+	exit $?
+
+elif [ "$1" == "ahg" ]; then
+
+	NODE_PATH="$NODE_PATH:$ORIGIN_PATH/node_modules" EXPOSE_QUERY_DUMP=$EXPOSE_QUERY_DUMP EXPOSE_HARNESS_TARGET=$2 ./scripts/analyse ../lib/Harness/src/harness.js "${@:3}"
+
+elif [ "$1" == "replay" ]; then
+  source ./scripts/env
+	. ./scripts/play "$(abs_target $2 $ORIGIN_PATH)" "${@:3}"
+else
+
+	if [[ $1 =~ ^http(s)?:// ]]; then #Web URL, launch web mode
+		echo "Web Mode, Starting Proxy"
+		. ./scripts/run_proxy
+    echo "Started on ${MITM_PORT} : Logs to ${MITM_FILE} : PID ${MITM_PID}"
+		EXPOSE_PLAY_SCRIPT="./scripts/play_electron"
+		if [[ -z ${MITM_PID} ]]; then
+			exit 1
+		fi
+	fi
+   
+  MITM_PORT="${MITM_PORT}" EXPOSE_PLAY_SCRIPT=${EXPOSE_PLAY_SCRIPT} EXPOSE_QUERY_DUMP=$EXPOSE_QUERY_DUMP ./scripts/analyse "$(abs_target "$1" "$ORIGIN_PATH")" "${@:2}"
+  OUT_CODE=$?
+
+  if [[ ! -z $MITM_PID ]]; then
+      echo "Killing server"
+      kill -9 $MITM_PID
+	  	rm "${MITM_FILE}"
+  fi
+	
+  exit $OUT_CODE
+fi

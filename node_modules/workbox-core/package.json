@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      "workbox-core@3.4.1",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "workbox-core@3.4.1",
+  "_id": "workbox-core@3.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-RqMV2so9/KLAu9aUxJ/85pvrZMUn835B8zoHmqRyGNetiDr8B1zSBeKXPZAjFlX/88KdhizNwiRlJtqlXtM4tA==",
+  "_location": "/workbox-core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "workbox-core@3.4.1",
+    "name": "workbox-core",
+    "escapedName": "workbox-core",
+    "rawSpec": "3.4.1",
+    "saveSpec": null,
+    "fetchSpec": "3.4.1"
+  },
+  "_requiredBy": [
+    "/workbox-background-sync",
+    "/workbox-broadcast-cache-update",
+    "/workbox-build",
+    "/workbox-cache-expiration",
+    "/workbox-cacheable-response",
+    "/workbox-google-analytics",
+    "/workbox-navigation-preload",
+    "/workbox-precaching",
+    "/workbox-range-requests",
+    "/workbox-routing",
+    "/workbox-strategies",
+    "/workbox-streams"
+  ],
+  "_resolved": "https://registry.npmjs.org/workbox-core/-/workbox-core-3.4.1.tgz",
+  "_spec": "3.4.1",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Google's Web DevRel Team"
+  },
+  "bugs": {
+    "url": "https://github.com/googlechrome/workbox/issues"
+  },
+  "description": "This module is used by a number of the other Workbox modules to share common code.",
+  "homepage": "https://github.com/GoogleChrome/workbox",
+  "keywords": [
+    "workbox",
+    "workboxjs",
+    "service worker",
+    "sw"
+  ],
+  "license": "Apache-2.0",
+  "main": "build/workbox-core.prod.js",
+  "module": "index.mjs",
+  "name": "workbox-core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/googlechrome/workbox.git"
+  },
+  "scripts": {
+    "build": "gulp build-packages --package workbox-core",
+    "prepare": "npm run build",
+    "version": "npm run build"
+  },
+  "version": "3.4.1",
+  "workbox": {
+    "browserNamespace": "workbox.core",
+    "packageType": "browser",
+    "includeBabelHelpers": true
+  }
+}

@@ -1,0 +1,265 @@
+connect-mongodb-session@2.1.1 /home/val/Workspace/MongoDB/connect-mongodb-session
+├─┬ acquit@1.0.0
+│ ├── esprima@4.0.0
+│ ├── lodash@4.17.5
+│ └── marked@0.3.9
+├── acquit-ignore@0.1.0
+├─┬ acquit-markdown@0.1.0
+│ └── commander@2.13.0
+├─┬ archetype@0.8.8
+│ ├── lodash.clonedeep@4.5.0
+│ ├── lodash.set@4.3.2
+│ ├── lodash.unset@4.5.2
+│ ├── mpath@0.5.1
+│ └── standard-error@1.1.0
+├── cookie@0.3.1
+├─┬ express@4.14.0
+│ ├─┬ accepts@1.3.7
+│ │ ├── mime-types@2.1.24 deduped
+│ │ └── negotiator@0.6.2
+│ ├── array-flatten@1.1.1
+│ ├── content-disposition@0.5.1
+│ ├── content-type@1.0.4
+│ ├── cookie@0.3.1 deduped
+│ ├── cookie-signature@1.0.6
+│ ├─┬ debug@2.2.0
+│ │ └── ms@0.7.1
+│ ├── depd@1.1.2
+│ ├── encodeurl@1.0.2
+│ ├── escape-html@1.0.3
+│ ├── etag@1.7.0
+│ ├─┬ finalhandler@0.5.0
+│ │ ├── debug@2.2.0 deduped
+│ │ ├── escape-html@1.0.3 deduped
+│ │ ├── on-finished@2.3.0 deduped
+│ │ ├── statuses@1.3.1
+│ │ └── unpipe@1.0.0
+│ ├── fresh@0.3.0
+│ ├── merge-descriptors@1.0.1
+│ ├── methods@1.1.2
+│ ├─┬ on-finished@2.3.0
+│ │ └── ee-first@1.1.1
+│ ├── parseurl@1.3.3
+│ ├── path-to-regexp@0.1.7
+│ ├─┬ proxy-addr@1.1.5
+│ │ ├── forwarded@0.1.2
+│ │ └── ipaddr.js@1.4.0
+│ ├── qs@6.2.0
+│ ├── range-parser@1.2.1
+│ ├─┬ send@0.14.1
+│ │ ├── debug@2.2.0 deduped
+│ │ ├── depd@1.1.2 deduped
+│ │ ├── destroy@1.0.4
+│ │ ├── encodeurl@1.0.2 deduped
+│ │ ├── escape-html@1.0.3 deduped
+│ │ ├── etag@1.7.0 deduped
+│ │ ├── fresh@0.3.0 deduped
+│ │ ├─┬ http-errors@1.5.1
+│ │ │ ├── inherits@2.0.3 deduped
+│ │ │ ├── setprototypeof@1.0.2
+│ │ │ └── statuses@1.3.1 deduped
+│ │ ├── mime@1.3.4
+│ │ ├── ms@0.7.1 deduped
+│ │ ├── on-finished@2.3.0 deduped
+│ │ ├── range-parser@1.2.1 deduped
+│ │ └── statuses@1.3.1 deduped
+│ ├─┬ serve-static@1.11.2
+│ │ ├── encodeurl@1.0.2 deduped
+│ │ ├── escape-html@1.0.3 deduped
+│ │ ├── parseurl@1.3.3 deduped
+│ │ └─┬ send@0.14.2
+│ │   ├── debug@2.2.0 deduped
+│ │   ├── depd@1.1.2 deduped
+│ │   ├── destroy@1.0.4 deduped
+│ │   ├── encodeurl@1.0.2 deduped
+│ │   ├── escape-html@1.0.3 deduped
+│ │   ├── etag@1.7.0 deduped
+│ │   ├── fresh@0.3.0 deduped
+│ │   ├── http-errors@1.5.1 deduped
+│ │   ├── mime@1.3.4 deduped
+│ │   ├── ms@0.7.2
+│ │   ├── on-finished@2.3.0 deduped
+│ │   ├── range-parser@1.2.1 deduped
+│ │   └── statuses@1.3.1 deduped
+│ ├─┬ type-is@1.6.18
+│ │ ├── media-typer@0.3.0
+│ │ └── mime-types@2.1.24 deduped
+│ ├── utils-merge@1.0.0
+│ └── vary@1.1.2
+├─┬ express-session@1.15.2
+│ ├── cookie@0.3.1 deduped
+│ ├── cookie-signature@1.0.6 deduped
+│ ├── crc@3.4.4
+│ ├─┬ debug@2.6.3
+│ │ └── ms@0.7.2
+│ ├── depd@1.1.2 deduped
+│ ├── on-headers@1.0.2
+│ ├── parseurl@1.3.3 deduped
+│ ├─┬ uid-safe@2.1.5
+│ │ └── random-bytes@1.0.0
+│ └── utils-merge@1.0.0 deduped
+├─┬ istanbul@0.4.5
+│ ├── abbrev@1.0.9
+│ ├── async@1.5.2
+│ ├─┬ escodegen@1.8.1
+│ │ ├── esprima@2.7.3
+│ │ ├── estraverse@1.9.3
+│ │ ├── esutils@2.0.2
+│ │ ├─┬ optionator@0.8.2
+│ │ │ ├── deep-is@0.1.3
+│ │ │ ├── fast-levenshtein@2.0.6
+│ │ │ ├─┬ levn@0.3.0
+│ │ │ │ ├── prelude-ls@1.1.2 deduped
+│ │ │ │ └── type-check@0.3.2 deduped
+│ │ │ ├── prelude-ls@1.1.2
+│ │ │ ├─┬ type-check@0.3.2
+│ │ │ │ └── prelude-ls@1.1.2 deduped
+│ │ │ └── wordwrap@1.0.0 deduped
+│ │ └─┬ source-map@0.2.0
+│ │   └── amdefine@1.0.1
+│ ├── esprima@2.7.3
+│ ├─┬ glob@5.0.15
+│ │ ├─┬ inflight@1.0.6
+│ │ │ ├── once@1.4.0 deduped
+│ │ │ └── wrappy@1.0.2 deduped
+│ │ ├── inherits@2.0.3
+│ │ ├─┬ minimatch@3.0.4
+│ │ │ └─┬ brace-expansion@1.1.11
+│ │ │   ├── balanced-match@1.0.0
+│ │ │   └── concat-map@0.0.1
+│ │ ├── once@1.4.0 deduped
+│ │ └── path-is-absolute@1.0.1
+│ ├─┬ handlebars@4.1.2
+│ │ ├── neo-async@2.6.1
+│ │ ├─┬ optimist@0.6.1
+│ │ │ ├── minimist@0.0.10
+│ │ │ └── wordwrap@0.0.3
+│ │ ├── source-map@0.6.1
+│ │ └─┬ uglify-js@3.6.0
+│ │   ├── commander@2.20.0
+│ │   └── source-map@0.6.1
+│ ├─┬ js-yaml@3.13.1
+│ │ ├─┬ argparse@1.0.10
+│ │ │ └── sprintf-js@1.0.3
+│ │ └── esprima@4.0.0 deduped
+│ ├─┬ mkdirp@0.5.1
+│ │ └── minimist@0.0.8
+│ ├─┬ nopt@3.0.6
+│ │ └── abbrev@1.0.9 deduped
+│ ├─┬ once@1.4.0
+│ │ └── wrappy@1.0.2
+│ ├── resolve@1.1.7
+│ ├─┬ supports-color@3.2.3
+│ │ └── has-flag@1.0.0
+│ ├─┬ which@1.3.1
+│ │ └── isexe@2.0.0
+│ └── wordwrap@1.0.0
+├─┬ mocha@3.1.2
+│ ├── browser-stdout@1.3.0
+│ ├─┬ commander@2.9.0
+│ │ └── graceful-readlink@1.0.1
+│ ├── debug@2.2.0 deduped
+│ ├── diff@1.4.0
+│ ├── escape-string-regexp@1.0.5
+│ ├─┬ glob@7.0.5
+│ │ ├── fs.realpath@1.0.0
+│ │ ├── inflight@1.0.6 deduped
+│ │ ├── inherits@2.0.3 deduped
+│ │ ├── minimatch@3.0.4 deduped
+│ │ ├── once@1.4.0 deduped
+│ │ └── path-is-absolute@1.0.1 deduped
+│ ├── growl@1.9.2
+│ ├── json3@3.3.2
+│ ├─┬ lodash.create@3.1.1
+│ │ ├─┬ lodash._baseassign@3.2.0
+│ │ │ ├── lodash._basecopy@3.0.1
+│ │ │ └─┬ lodash.keys@3.1.2
+│ │ │   ├── lodash._getnative@3.9.1
+│ │ │   ├── lodash.isarguments@3.1.0
+│ │ │   └── lodash.isarray@3.0.4
+│ │ ├── lodash._basecreate@3.0.3
+│ │ └── lodash._isiterateecall@3.0.9
+│ ├── mkdirp@0.5.1 deduped
+│ └─┬ supports-color@3.1.2
+│   └── has-flag@1.0.0 deduped
+├─┬ mongodb@3.2.7
+│ ├─┬ mongodb-core@3.2.7
+│ │ ├── bson@1.1.1
+│ │ ├─┬ require_optional@1.0.1
+│ │ │ ├── resolve-from@2.0.0
+│ │ │ └── semver@5.7.0
+│ │ ├── safe-buffer@5.1.2 deduped
+│ │ └─┬ saslprep@1.0.3
+│ │   └─┬ sparse-bitfield@3.0.3
+│ │     └── memory-pager@1.5.0
+│ └── safe-buffer@5.1.2
+├─┬ request@2.81.0
+│ ├── aws-sign2@0.6.0
+│ ├── aws4@1.8.0
+│ ├── caseless@0.12.0
+│ ├─┬ combined-stream@1.0.8
+│ │ └── delayed-stream@1.0.0
+│ ├── extend@3.0.2
+│ ├── forever-agent@0.6.1
+│ ├─┬ form-data@2.1.4
+│ │ ├── asynckit@0.4.0
+│ │ ├── combined-stream@1.0.8 deduped
+│ │ └── mime-types@2.1.24 deduped
+│ ├─┬ har-validator@4.2.1
+│ │ ├─┬ ajv@4.11.8
+│ │ │ ├── co@4.6.0
+│ │ │ └─┬ json-stable-stringify@1.0.1
+│ │ │   └── jsonify@0.0.0
+│ │ └── har-schema@1.0.5
+│ ├─┬ hawk@3.1.3
+│ │ ├─┬ boom@2.10.1
+│ │ │ └── hoek@2.16.3 deduped
+│ │ ├─┬ cryptiles@2.0.5
+│ │ │ └── boom@2.10.1 deduped
+│ │ ├── hoek@2.16.3
+│ │ └─┬ sntp@1.0.9
+│ │   └── hoek@2.16.3 deduped
+│ ├─┬ http-signature@1.1.1
+│ │ ├── assert-plus@0.2.0
+│ │ ├─┬ jsprim@1.4.1
+│ │ │ ├── assert-plus@1.0.0
+│ │ │ ├── extsprintf@1.3.0
+│ │ │ ├── json-schema@0.2.3
+│ │ │ └─┬ verror@1.10.0
+│ │ │   ├── assert-plus@1.0.0
+│ │ │   ├── core-util-is@1.0.2
+│ │ │   └── extsprintf@1.3.0 deduped
+│ │ └─┬ sshpk@1.16.1
+│ │   ├─┬ asn1@0.2.4
+│ │   │ └── safer-buffer@2.1.2 deduped
+│ │   ├── assert-plus@1.0.0
+│ │   ├─┬ bcrypt-pbkdf@1.0.2
+│ │   │ └── tweetnacl@0.14.5 deduped
+│ │   ├─┬ dashdash@1.14.1
+│ │   │ └── assert-plus@1.0.0
+│ │   ├─┬ ecc-jsbn@0.1.2
+│ │   │ ├── jsbn@0.1.1 deduped
+│ │   │ └── safer-buffer@2.1.2 deduped
+│ │   ├─┬ getpass@0.1.7
+│ │   │ └── assert-plus@1.0.0
+│ │   ├── jsbn@0.1.1
+│ │   ├── safer-buffer@2.1.2
+│ │   └── tweetnacl@0.14.5
+│ ├── is-typedarray@1.0.0
+│ ├── isstream@0.1.2
+│ ├── json-stringify-safe@5.0.1
+│ ├─┬ mime-types@2.1.24
+│ │ └── mime-db@1.40.0
+│ ├── oauth-sign@0.8.2
+│ ├── performance-now@0.2.0
+│ ├── qs@6.4.0
+│ ├── safe-buffer@5.1.2 deduped
+│ ├── stringstream@0.0.6
+│ ├─┬ tough-cookie@2.3.4
+│ │ └── punycode@1.4.1
+│ ├─┬ tunnel-agent@0.6.0
+│ │ └── safe-buffer@5.1.2 deduped
+│ └── uuid@3.3.2
+└─┬ strawman@0.0.1
+  └── underscore@1.5.2
+

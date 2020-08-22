@@ -1,0 +1,12 @@
+{
+  "node": true,
+  "mocha": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "indent": 2,
+  "newcap": true,
+  "quotmark": "single",
+  "undef": true,
+  "trailing": true,
+  "shadow": true
+}

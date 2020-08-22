@@ -1,0 +1,6 @@
+--compilers coffee:coffee-script/register
+--ui bdd
+--growl
+--colors
+--recursive
+

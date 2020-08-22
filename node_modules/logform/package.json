@@ -1,0 +1,72 @@
+{
+  "_args": [
+    [
+      "logform@1.9.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "logform@1.9.0",
+  "_id": "logform@1.9.0",
+  "_inBundle": false,
+  "_integrity": "sha512-H1gneJlqo1dwmXq52p/X57SztuX20aWQArp69u4x7DDmCkMZgMLtBTm2LMoTz0+wu7HdkICiPj6vBbX8WJFRig==",
+  "_location": "/logform",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "logform@1.9.0",
+    "name": "logform",
+    "escapedName": "logform",
+    "rawSpec": "1.9.0",
+    "saveSpec": null,
+    "fetchSpec": "1.9.0"
+  },
+  "_requiredBy": [
+    "/winston"
+  ],
+  "_resolved": "https://registry.npmjs.org/logform/-/logform-1.9.0.tgz",
+  "_spec": "1.9.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Charlie Robbins",
+    "email": "charlie.robbins@gmail.com"
+  },
+  "browser": "browser.js",
+  "bugs": {
+    "url": "https://github.com/winstonjs/logform/issues"
+  },
+  "dependencies": {
+    "colors": "^1.2.1",
+    "fast-safe-stringify": "^2.0.4",
+    "fecha": "^2.3.3",
+    "ms": "^2.1.1",
+    "triple-beam": "^1.2.0"
+  },
+  "description": "An mutable object-based log format designed for chaining & objectMode streams.",
+  "devDependencies": {
+    "assume": "^2.0.1",
+    "eslint-config-populist": "^4.1.0",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1"
+  },
+  "homepage": "https://github.com/winstonjs/logform#readme",
+  "keywords": [
+    "winston",
+    "logging",
+    "format",
+    "winstonjs"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "logform",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winstonjs/logform.git"
+  },
+  "scripts": {
+    "lint": "populist *.js test/*.js examples/*.js",
+    "pretest": "npm run lint",
+    "test": "nyc mocha test/*.test.js"
+  },
+  "version": "1.9.0"
+}

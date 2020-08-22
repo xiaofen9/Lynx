@@ -1,0 +1,11 @@
+sudo: false
+language: node_js
+node_js:
+  - "0.10"
+  - "4.0"
+  - "4.1"
+  - "stable"
+before_install:
+  - npm install -g grunt-cli
+after_script:
+  - mocha -t 60000 --require blanket --reporter mocha-lcov-reporter

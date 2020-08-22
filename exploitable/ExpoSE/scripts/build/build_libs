@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+. ./scripts/build/build lib/Stats src bin

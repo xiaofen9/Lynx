@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Author: Eric Bidelman (ericbidelman@chromium.org) -->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Profiler of web requests</title>
+  <style>
+    html { height: 100%; }
+    body {
+      padding: 2em;
+      margin: 0;
+      font: 12pt normal 'Myriad Pro', Arial, sans-serif;
+      background: -moz-radial-gradient(center center, #fff, #bbb) no-repeat;
+      background: -webkit-radial-gradient(center center, #fff, #bbb) no-repeat;
+      color: #222;
+    }
+    img {
+      max-width: 100px;
+      border: 1px solid #999;
+    }
+    output {
+      display: inline-block;
+      text-align: center;
+      margin-top: 2em;
+      width: 100%;
+    }
+    h2 {
+      margin: 0 0 0.25em 0;
+      text-shadow: -1px 1px #fff;
+    }
+    a {
+      color: navy;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    figure {
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+      width: 300px;
+    }
+    figcaption {
+      font-size: 9pt;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: no-break;
+    }
+    details {
+      font-size: 80%;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-bottom: 1em;
+      background: rgba(255,255,255,0.75);
+      width: 750px;
+    }
+    details p {
+      margin: 5px 0;
+    }
+    details > ul {
+      margin: 0;
+    }
+    li {
+      list-style: none;
+    }
+    .button {
+      height: 26px;
+      width: 145px;
+    }
+    .button::-webkit-file-upload-button,
+    .button::-moz-file-upload-button {
+      visibility: hidden;
+    }
+    .button:before {
+      content: 'Import image files';
+      display: inline-block;
+      background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#F9F9F9), to(#E3E3E3));
+      border: 1px solid #999;
+      border-radius: 3px;
+      padding: 5px 8px;
+      outline: none;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: pointer;
+      text-shadow: 1px 1px #fff;
+      font-weight: 700;
+      font-size: 10pt;
+    }
+    .button:hover:before {
+      border-color: black;
+    }
+    .button:active:before {
+      background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#E3E3E3), to(#F9F9F9));
+    }
+    #filelist {
+      padding-top: 0.5em;
+    }
+    #filelist .remove {
+      margin-left: 10px;
+      font-size: small;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  
+<h2>Profiler of web requests</h3>
+<div>
+  <button id="start">Start</button>
+  <button id="stop" disabled>Stop</button>
+</div>
+<br>
+<div>
+  <button id="listlog">list</button>
+  <div id="filelist"><em>Loading files...</em></div>
+</div>
+
+<output></output>
+
+<script src="filesystem.js"></script>
+<script src="intercept.js"></script>
+
+</body>
+</html>

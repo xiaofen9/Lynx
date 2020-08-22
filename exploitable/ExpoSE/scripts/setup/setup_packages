@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+(./scripts/setup/setup_pkg lib/S$)
+(./scripts/setup/setup_pkg lib/Stats)
+(./scripts/setup/setup_pkg Analyser)
+(./scripts/setup/setup_pkg Tester)
+(./scripts/setup/setup_pkg Distributor)
+(./scripts/setup/setup_pkg Dashboard)
+(./scripts/setup/setup_pkg Browser)

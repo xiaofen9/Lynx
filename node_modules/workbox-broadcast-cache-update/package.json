@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      "workbox-broadcast-cache-update@3.4.1",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "workbox-broadcast-cache-update@3.4.1",
+  "_id": "workbox-broadcast-cache-update@3.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-+WPqHFk4ER4RICAMOYrP88yBbiUQ9ZOFNruqwbl9YxGfbADV16OEGmYpIs+Az6HT6DNDCx8eQqtFiaG8N3O11Q==",
+  "_location": "/workbox-broadcast-cache-update",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "workbox-broadcast-cache-update@3.4.1",
+    "name": "workbox-broadcast-cache-update",
+    "escapedName": "workbox-broadcast-cache-update",
+    "rawSpec": "3.4.1",
+    "saveSpec": null,
+    "fetchSpec": "3.4.1"
+  },
+  "_requiredBy": [
+    "/workbox-build"
+  ],
+  "_resolved": "https://registry.npmjs.org/workbox-broadcast-cache-update/-/workbox-broadcast-cache-update-3.4.1.tgz",
+  "_spec": "3.4.1",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Google's Web DevRel Team"
+  },
+  "bugs": {
+    "url": "https://github.com/googlechrome/workbox/issues"
+  },
+  "dependencies": {
+    "workbox-core": "^3.4.1"
+  },
+  "description": "A service worker helper library that uses the Broadcast Channel API to announce when a cached response has updated",
+  "homepage": "https://github.com/GoogleChrome/workbox",
+  "keywords": [
+    "workbox",
+    "workboxjs",
+    "service worker",
+    "sw"
+  ],
+  "license": "Apache-2.0",
+  "main": "build/workbox-broadcast-cache-update.prod.js",
+  "module": "index.mjs",
+  "name": "workbox-broadcast-cache-update",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/googlechrome/workbox.git"
+  },
+  "scripts": {
+    "build": "gulp build-packages --package workbox-broadcast-cache-update",
+    "prepare": "npm run build",
+    "version": "npm run build"
+  },
+  "version": "3.4.1",
+  "workbox": {
+    "browserNamespace": "workbox.broadcastUpdate",
+    "packageType": "browser"
+  }
+}

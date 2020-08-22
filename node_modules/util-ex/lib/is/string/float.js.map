@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "float.js",
+  "sourceRoot": "../../../src/is/string/",
+  "sources": [
+    "float.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,MAAA;;EAAA,KAAA,GAAQ;;EAER,MAAM,CAAC,OAAP,GAAiB,SAAC,GAAD;WAAO,GAAA,KAAS,EAAT,IAAgB,KAAK,CAAC,IAAN,CAAW,GAAX;EAAvB;AAFjB"
+}

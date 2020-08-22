@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      "cssnano-preset-default@4.0.0",
+      "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin"
+    ]
+  ],
+  "_from": "cssnano-preset-default@4.0.0",
+  "_id": "cssnano-preset-default@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-wzQoe099SfstFwqS+SFGVXiOO2s=",
+  "_location": "/cssnano-preset-default",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cssnano-preset-default@4.0.0",
+    "name": "cssnano-preset-default",
+    "escapedName": "cssnano-preset-default",
+    "rawSpec": "4.0.0",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0"
+  },
+  "_requiredBy": [
+    "/cssnano"
+  ],
+  "_resolved": "https://registry.npmjs.org/cssnano-preset-default/-/cssnano-preset-default-4.0.0.tgz",
+  "_spec": "4.0.0",
+  "_where": "/Users/Cloud/Documents/lab/NodeJS/targets/cezerin",
+  "author": {
+    "name": "Ben Briggs",
+    "email": "beneb.info@gmail.com",
+    "url": "http://beneb.info"
+  },
+  "bugs": {
+    "url": "https://github.com/cssnano/cssnano/issues"
+  },
+  "dependencies": {
+    "css-declaration-sorter": "^3.0.0",
+    "cssnano-util-raw-cache": "^4.0.0",
+    "postcss": "^6.0.0",
+    "postcss-calc": "^6.0.0",
+    "postcss-colormin": "^4.0.0",
+    "postcss-convert-values": "^4.0.0",
+    "postcss-discard-comments": "^4.0.0",
+    "postcss-discard-duplicates": "^4.0.0",
+    "postcss-discard-empty": "^4.0.0",
+    "postcss-discard-overridden": "^4.0.0",
+    "postcss-merge-longhand": "^4.0.0",
+    "postcss-merge-rules": "^4.0.0",
+    "postcss-minify-font-values": "^4.0.0",
+    "postcss-minify-gradients": "^4.0.0",
+    "postcss-minify-params": "^4.0.0",
+    "postcss-minify-selectors": "^4.0.0",
+    "postcss-normalize-charset": "^4.0.0",
+    "postcss-normalize-display-values": "^4.0.0",
+    "postcss-normalize-positions": "^4.0.0",
+    "postcss-normalize-repeat-style": "^4.0.0",
+    "postcss-normalize-string": "^4.0.0",
+    "postcss-normalize-timing-functions": "^4.0.0",
+    "postcss-normalize-unicode": "^4.0.0",
+    "postcss-normalize-url": "^4.0.0",
+    "postcss-normalize-whitespace": "^4.0.0",
+    "postcss-ordered-values": "^4.0.0",
+    "postcss-reduce-initial": "^4.0.0",
+    "postcss-reduce-transforms": "^4.0.0",
+    "postcss-svgo": "^4.0.0",
+    "postcss-unique-selectors": "^4.0.0"
+  },
+  "description": "Safe defaults for cssnano which require minimal configuration.",
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "cross-env": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "files": [
+    "LICENSE-MIT",
+    "dist"
+  ],
+  "homepage": "https://github.com/cssnano/cssnano",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "cssnano-preset-default",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssnano/cssnano.git"
+  },
+  "scripts": {
+    "prepublish": "cross-env BABEL_ENV=publish babel src --out-dir dist --ignore /__tests__/"
+  },
+  "version": "4.0.0"
+}

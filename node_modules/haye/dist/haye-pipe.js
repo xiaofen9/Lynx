@@ -1,0 +1,1 @@
+"use strict";function Pipe(e,a){a.add();for(var r=e.length,t=0,d="name";t<r;){var n=e[t++],p=n.charCodeAt(0);58===p||44===p?(d="arg",a.shiftValue()):124===p?(d="name",a.add()):"arg"===d?a.appendValue(n):a.appendKey(n,p)}return a.toJSON()}module.exports=Pipe;
