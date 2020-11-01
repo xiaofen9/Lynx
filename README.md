@@ -2,6 +2,7 @@
 
 Lynx is a vulnerabiltiy analysis tool to detect hidden property abusing ([HPA](https://www.blackhat.com/us-20/briefings/schedule/index.html#discovering-hidden-properties-to-attack-the-nodejs-ecosystem-19594)) vulnerability in the Node.js ecosystem.
 
+**Lynx project is currently under active development. Do expect functional changes in the near future.**
 
 ## Tutorial
 

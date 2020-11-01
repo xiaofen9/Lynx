@@ -30,39 +30,7 @@ require("core-js/modules/es.regexp.to-string");
 
 require("core-js/modules/es.string.iterator");
 
-require("core-js/modules/es.string.split");
-
-require("core-js/modules/web.dom-collections.iterator");
-
-require("core-js/modules/es.symbol");
-
-require("core-js/modules/es.symbol.description");
-
-require("core-js/modules/es.symbol.iterator");
-
-require("core-js/modules/es.array.concat");
-
-require("core-js/modules/es.array.index-of");
-
-require("core-js/modules/es.array.is-array");
-
-require("core-js/modules/es.array.iterator");
-
-require("core-js/modules/es.array.slice");
-
-require("core-js/modules/es.date.to-string");
-
-require("core-js/modules/es.function.name");
-
-require("core-js/modules/es.object.get-own-property-names");
-
-require("core-js/modules/es.object.to-string");
-
-require("core-js/modules/es.regexp.exec");
-
-require("core-js/modules/es.regexp.to-string");
-
-require("core-js/modules/es.string.iterator");
+require("core-js/modules/es.string.replace");
 
 require("core-js/modules/es.string.split");
 
@@ -76,7 +44,8 @@ var fs = require('fs');
 
 var Qs = require('qs');
 
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var UrlParse = require('url-parse');
+
 
 var rootMagicName = 'R0ot';
 
@@ -313,77 +282,186 @@ function verifyHipar(testFunc, param) {
   }
 }
 
+
 function send(input) {
+  return new Promise(function (resolve, reject) {
   var detail = global.detail;
-  var xhr = new XMLHttpRequest();
-  xhr.open(detail.method, detail.url, true);
-  console.log(detail.url); // xhr.open("POST", '/response.json', true);
-
-  var type = "";
-
-  for (var i = 0; i < detail.requestHeaders.length; i++) {
-    xhr.setRequestHeader(detail.requestHeaders[i].name, detail.requestHeaders[i].value);
-    if (detail.requestHeaders[i].name == "Content-Type") type = detail.requestHeaders[i].value;
+  var detailSeq = global.detailSeq;
+  var index;
+  for(var i=0;i<detailSeq.length;i++){
+    if(detailSeq[i].requestId==detail.requestId)
+      index=i;
   }
-
-  xhr.onreadystatechange = function () {
-    console.log(xhr.status, xhr.responseText);
+  for (var i=0;i<index;i++)
+  {
+    request(detailSeq[i].options,function(error, response, body){});
+  }
+  var targeturl;
+  if (detail.method == 'GET') {
+    targeturl = detail.urlbase + '?' + Qs.stringify(input);
+  } else {
+    targeturl = detail.url;
+  }
+  
+  var headers = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:72.0) Gecko/20100101 Firefox/72.0",
   };
+  var type = "";
+  for (var i = 0; i < detail.requestHeaders.length; i++) {
+      headers[detail.requestHeaders[i].name]=detail.requestHeaders[i].value
+      if (detail.requestHeaders[i].name.toLowerCase() == "content-type") type = detail.requestHeaders[i].value;
+  }
+  var options = {
+      url: targeturl,
+      headers: headers,
+      method: detail.method,
+      timeout: 3000,
+  };
+  // console.log(targeturl)
+
+  if (detail.method != 'GET'){
+    // POST condition
+    // below are trivial post body sending part
+    if (type.indexOf("json") != -1) {
+      // if contentType is json 
+      options.body=JSON.stringify(input);
+    } else {
+      // 
+      for (var i in input) {
+        try {
+          if (typeof input[i] != 'string') input[i] = JSON.stringify(input[i]);
+        } catch (_unused2) {}
+      }
+
+      if (type.indexOf("x-www-form-urlencoded") != -1) {
+        console.log(Qs.stringify(input));
+        options.body=Qs.stringify(input);
+      } else {
+        headers["Content-Type"]="application/x-www-form-urlencoded; charset=UTF-8";
+        options.body=Qs.stringify(input);
+      }
+      
+    }
+    
+  }
+  if(global.detailSeq[index].options == undefined)
+    global.detailSeq[index].options  = options;
+  request(options, function(error, response, body){
+    console.log('statusCode:', response && response.statusCode);
+    // console.log('error: ', error);
+    // console.log('body: ', body);
+    resolve()
+  });
+  
+
+  // xhr.open(detail.method, targeturl,false);
+  // console.log(targeturl); // xhr.open("POST", '/response.json', true);
 
   
-  if (type.indexOf("json") != -1) {
-    xhr.send(JSON.stringify(input));
-  }else{
-    for (var i in input) {
-      try {
-        if(typeof(input[i])!='string')
-          input[i] = JSON.stringify(input[i]);
-      } catch (_unused2) {}
-    }
-    if (type.indexOf("x-www-form-urlencoded") != -1) {
-      console.log('xform');
-      console.log(Qs.stringify(input));
-      xhr.send(Qs.stringify(input));
-    } else {
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-      xhr.send(Qs.stringify(input));
-    }
-  }
-  
+
+  // for (var i = 0; i < detail.requestHeaders.length; i++) {
+  //   xhr.setRequestHeader(detail.requestHeaders[i].name, detail.requestHeaders[i].value);
+  //   if (detail.requestHeaders[i].name.toLowerCase() == "content-type") type = detail.requestHeaders[i].value;
+  // }
+
+  // xhr.onreadystatechange = function () {
+  //   console.log('status:',xhr.status);
+  // };
+
+  // if (detail.method == 'GET') {
+  //   xhr.send();
+  // } else {
+  //   // POST condition
+  //   // below are trivial post body sending part
+  //   if (type.indexOf("json") != -1) {
+  //     // if contentType is json 
+  //     xhr.send(JSON.stringify(input));
+  //   } else {
+  //     // 
+  //     for (var i in input) {
+  //       try {
+  //         if (typeof input[i] != 'string') input[i] = JSON.stringify(input[i]);
+  //       } catch (_unused2) {}
+  //     }
+
+  //     if (type.indexOf("x-www-form-urlencoded") != -1) {
+  //       console.log(Qs.stringify(input));
+  //       xhr.send(Qs.stringify(input));
+  //     } else {
+  //       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+  //       xhr.send(Qs.stringify(input));
+  //     }
+  //   }
+  // }
+});
 }
 
-function requestFromLog(reqlist) {
-  var request = require('request');
-
+function requestFromLog(reqlist, cb) {
+  var queryobj;
   process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
-
+  var detailSeq=[]
+  for (var i in reqlist)
+    detailSeq.push(reqlist[i]);
+  console.log(detailSeq)
+  global.detailSeq=detailSeq;
   for (var i in reqlist) {
     global.detail = reqlist[i];
 
-    if (global.detail.requestBody != undefined && global.detail.requestBody.formData != undefined) {
-      var LYNX_input = global.detail.requestBody.formData;
+    if (global.detail.method == 'POST' || global.detail.method == 'PUT') {
+      if (global.detail.requestBody.formData != undefined) {
+        queryobj = global.detail.requestBody.formData; // make formdata become Object 
 
-      for (var i in LYNX_input) {
-        LYNX_input[i] = LYNX_input[i].toString();
+        for (var i in queryobj) {
+          queryobj[i] = queryobj[i].toString();
 
-        if (LYNX_input[i][0] == '{' && LYNX_input[i][LYNX_input[i].length - 1] == '}') {
-          try {
-            LYNX_input[i] = JSON.parse(LYNX_input[i]);
-          } catch (_unused) {
-            var tmpValue;
-            eval("tmpValue=" + LYNX_input[i]);
-            LYNX_input[i] = tmpValue;
+          if (queryobj[i][0] == '{' && queryobj[i][queryobj[i].length - 1] == '}') {
+            try {
+              queryobj[i] = JSON.parse(queryobj[i]);
+            } catch (_unused) {
+              var tmpValue;
+              eval("tmpValue=" + queryobj[i]);
+              queryobj[i] = tmpValue;
+            }
           }
         }
-      }
+      } else if (global.detail.requestBody.raw != undefined) {
+          console.log('raw',global.detail.postedString)
+        var type = "";
 
-      console.log("input:", LYNX_input);
-      entry(send, LYNX_input);
+        for (var i = 0; i < global.detail.requestHeaders.length; i++) {
+          if (global.detail.requestHeaders[i].name.toLowerCase() == "content-type") type = global.detail.requestHeaders[i].value;
+        }
+
+        if (type.indexOf("json") != -1) {
+          // if contentType is json 
+          queryobj = JSON.parse(global.detail.postedString);
+        } else {
+          if (type.indexOf("x-www-form-urlencoded") != -1) {
+            queryobj = Qs.parse(global.detail.postedString);
+          } else {
+            console.error('undefine situation');
+            exit(-1);
+          }
+        }
+      } else {
+        console.error('undefined condition');
+        exit(-1);
+      }
     } else {
-      console.log("input:", LYNX_input);
-      var LYNX_input = Qs.parse(global.detail.postedString);
-      entry(send, LYNX_input);
+      var querystr = new UrlParse(global.detail.url).query;
+      queryobj = Qs.parse(querystr, {
+        ignoreQueryPrefix: true
+      });
+      if (!queryobj) continue;
+      global.detail.urlbase = global.detail.url.replace(querystr, '');
     }
+
+    queryobj = cb(queryobj); // after callback
+
+    console.log(tynt.Blue('----queryobj-----'));
+    console.log(queryobj);
+    console.log(tynt.Blue('----queryobj-----'));
+    entry(send, queryobj,true);
   }
 }
 
@@ -398,6 +476,7 @@ function verify_hipar(source_var) {
 
 function clone(a) {
   try {
+    if (a == undefined) return undefined;
     return JSON.parse(JSON.stringify(a));
   } catch (e) {
     console.log(a);
